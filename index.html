@@ -1,0 +1,439 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- Icon Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <!-- Google Font Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins&display=swap" rel="stylesheet">
+
+    <title>My Portofolio | Fauzan Abdillah</title>
+
+    <style>
+        * {
+            font-family: 'DM Serif Display', serif;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .nav-link {
+            color: #000000 !important;
+        }
+
+        .nav-link:hover,
+        .navbar-brand:hover {
+            text-decoration: none;
+            color: #34B3FF !important;
+        }
+
+        .navbar {
+            transition: all 500ms ease-in-out;
+        }
+
+
+        .navbar>div {
+            transition: all 1000ms ease-in-out;
+        }
+
+        .text-primary {
+            color: #34B3FF !important;
+        }
+
+        .btn-primary {
+            background-color: #34B3FF !important;
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .bg-light {
+            background-color: #FAFAFD !important;
+        }
+
+        .card {
+            border-radius: 12px !important;
+        }
+
+        .card-title {
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        .card-text {
+            text-align: justify;
+            margin-top: 10px;
+        }
+
+        .card-img-top {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .btn {
+            border-radius: 12px !important;
+        }
+
+        .pt-5 {
+            padding-top: 70px !important;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top shadows" id="navbar">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">My Portofolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav mr-auto w-100 justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">My Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">Courses Completed</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- akhir navbar -->
+
+    <section id="home">
+        <!-- jumbotron -->
+        <div class="pt-5"
+            style="background: linear-gradient(126.83deg, #CCECFF 0%, #ffffff 69.44%); padding-bottom: 80px !important;">
+            <div class="container">
+                <div class=" row py-3 mb-5">
+                    <div class="col-lg">
+                        <p class="fw-bold mt-5 pt-5 py-2" style="font-size: 54px; line-height: 91px;">Hello, there
+                            👋🏻👋🏻<br>I’m <span style="color: #34B3FF;">Fauzan</span></p>
+                        <p style="font-size: 24px;">My daily life building Mobile Apps with Flutter and Laravel as API
+                            <br>Nice to meet you
+                        </p>
+                    </div>
+                    <div class="col-lg">
+                        <img src="https://user-images.githubusercontent.com/74108522/167539914-a5f6a106-426d-429b-957f-083a79279bd0.png"
+                            class="px-5 mx-5 img-fluid" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- akhir jumbotron -->
+
+        <!-- about me -->
+        <div class="container" id="about">
+            <h1 class="fw-bold pt-5 text-center">About <span class="text-primary">Me</span></h1>
+
+            <div class="row my-5 py-1">
+                <div class="col-lg">
+                    <h5 class="fw-bold">Education</h5>
+                    <p>I am currently studying at the Jember State Polytechnic in the Department of Information
+                        Technology. It has become my daily life in developing technology, especially in software
+                        development.</p>
+                </div>
+                <div class="col-lg">
+                    <h5 class="fw-bold">Skills</h5>
+                    <ul>
+                        <li>UI/UX Design (Mobile/Web)</li>
+                        <li>Fullstack Mobile (Android Studio - Java)</li>
+                        <li>Fullstack Web (Laravel/PHP Native)</li>
+                        <li>Frontend Mobile (Flutter/Android Studio)</li>
+                        <li>Web Frontend (CSS Bootstrap)</li>
+                        <li>REST API (Laravel/PHP Native)</li>
+                    </ul>
+                </div>
+                <div class="col-lg">
+                    <h5 class="fw-bold">Experience</h5>
+                    <p>Android Developer - Freelance in projects.co.id, <a
+                            href="https://projects.co.id/public/browse_users/view/dd6624/user" target="blank"> visit my
+                            profile <i class="bi bi-box-arrow-in-up-right"></i>
+                        </a></p>
+                </div>
+            </div>
+        </div>
+        <!-- akhir about me -->
+
+        <!-- my projects -->
+        <div class="bg-light" id="projects">
+            <div class="container">
+                <h1 class="fw-bold pt-5 text-center">My <span class="text-primary">Projects</span></h1>
+
+                <!-- MOBILE APPS -->
+                <h3 class="fw-bold pt-4 mt-4">Mobile Apps</h3>
+                <div class="row row-cols-1 row-cols-md-3 g-4 pb-5">
+                    <!-- FASTCOOK -->
+                    <div class="col mt-5">
+                        <div class="card h-100">
+                            <img src="https://user-images.githubusercontent.com/74108522/167413487-d83d4ead-7b74-4061-b3b8-444f71fa90ee.png"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">FastCook</h5>
+                                <p class="card-text">FastCook is a food recipe application that can order food
+                                    ingredients or ready-made food, according to the recipe selected by the user. This
+                                    application is developed using Flutter Framework, and Laravel as Rest API.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ONE TOP STORE -->
+                    <div class="col mt-5">
+                        <div class="card h-100">
+                            <img src="https://user-images.githubusercontent.com/74108522/167417568-778a259e-3cb4-436e-8b47-309085deb779.png"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">One Top Store</h5>
+                                <p class="card-text">Top Up Game Application - One Top Store.
+                                    Made using Android Studio with the Java programming language.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SMART PARKING -->
+                    <div class="col mt-5">
+                        <div class="card h-100">
+                            <img src="https://user-images.githubusercontent.com/74108522/167416013-07aa7b4f-a1b9-4d79-a83e-279d91005c87.png"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Smart Parking</h5>
+                                <p class="card-text">Smart Parking is a mobile-based application that allows users to
+                                    park their vehicles without direct physical contact by users with parking
+                                    attendants. This application is made using Android Studio.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WEBSITE -->
+                <!-- <h3 class="fw-bold pt-4">Website</h3> -->
+                <!-- <div class="row row-cols-1 row-cols-md-3 g-4 pb-5"> -->
+                <!-- CIVIL SERVANT WARRIOR -->
+                <!-- <div class="col mt-5">
+                        <div class="card h-100">
+                            <img src="https://user-images.githubusercontent.com/74108522/161437949-41dc88fa-9aba-43f0-999a-73da7f187dbe.png"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Civil Servant Warrior</h5>
+                                <p class="card-text">Civil Servant Soldiers is an online course website for
+                                    preparation
+                                    for entering official schools. This website was created using the Framework
+                                    Laravel.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        <!-- akhir my projects -->
+
+        <!-- courses completed -->
+        <div class="container" id="courses">
+            <h1 class="fw-bold pt-5 text-center">Courses <span class="text-primary">Completed</span></h1>
+
+            <div class="row row-cols-1 row-cols-md-3 g-4 pb-5 mb-5 mt-3">
+                <!-- Mastering Flutter UI Design Modern -->
+                <div class="col mt-5">
+                    <div class="card h-100">
+                        <img src="https://user-images.githubusercontent.com/74108522/161437949-41dc88fa-9aba-43f0-999a-73da7f187dbe.png"
+                            class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Mastering Flutter UI Design Modern</h5>
+                            <p class="card-text">Hello friends!<br>
+                                I have completed a project that challenged me to complete a program from design to
+                                flutter in a short 7 days.
+                            </p>
+                            <a href="https://buildwithangga.com/showcase/fauzanabdillah2705/mastering-flutter-ui-design-modern"
+                                target="blank"> Visit my portofolio <i class="bi bi-box-arrow-in-up-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- akhir course completed -->
+
+        <!-- contact me -->
+        <div class="bg-light" id="contact">
+            <div class="container">
+                <h1 class="fw-bold pt-5 text-center">Contact <span class="text-primary">Me</span></h1>
+
+                <div class="row py-4 justify-content-center">
+                    <div class="col-lg-8">
+                        <div id="alert"></div>
+
+                        <div class="row">
+                            <div class="col form-group mt-2">
+                                <input type="text" id="fullname" class="form-control card bg-light"
+                                    placeholder="Fullname" name="fullname">
+                            </div>
+
+                            <div class="col form-group mt-2">
+                                <input type="email" id="email" class="form-control card bg-light"
+                                    placeholder="Email address" name="email">
+                            </div>
+                        </div>
+
+                        <div class="form-group mt-2">
+                            <textarea class="form-control card bg-light" id="message" rows="5"
+                                placeholder="Write a message" name="message"></textarea>
+                        </div>
+
+                        <button id="send" class="btn btn-primary mt-3 mb-5">
+                            Send message
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- akhir contact me -->
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <div style="background-color: #284B63;">
+            <hr class="bg-primary" style="padding: 0; margin: 0;">
+            <!-- copyright -->
+            <div class="container pt-2 pb-3">
+                <div class="row pt-3">
+
+                    <div class="col-md">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.0955905864407!2d113.64942141436123!3d-8.193125284430659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6915b7560eaa5%3A0x248498ce766a1b14!2sJl.%20Imam%20Sukari%20No.85%2C%20RT.001%2FRW.011%2C%20Karang%20Miuwo%2C%20Mangli%2C%20Kec.%20Kaliwates%2C%20Kabupaten%20Jember%2C%20Jawa%20Timur%2068131!5e0!3m2!1sid!2sid!4v1605109150421!5m2!1sid!2sid"
+                            frameborder="0" width="100%" height="150" style="border-radius: 10px;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+
+                    <div class="col-md mb-5">
+                        <ul class="list-inline">
+                            <li class="list-group mt-1"><a class="text-white"
+                                    href="https://www.google.com/maps/search/Jl.+Imam+Sukari+No.85+RT.001%2FRW.011,+Karang+Miuwo,+Mangli+Kec.+Kaliwates+Kabupaten+Jember,+Jawa+Timur+68131/@-8.193131,113.65161,16z?hl=id"
+                                    target="_blank"> 68136 -
+                                    Kaliwates, Jember</a></li>
+                            <li class="list-group mt-1"><a class="text-white"
+                                    href="mailto:fauzan.abdillah2705@gmail.com" target="_blank">
+                                    fauzan.abdillah2705@gmail.com</a></li>
+                            <li class="list-group mt-1"><a class="text-white" href="https://wa.me/6282338453446"
+                                    target="_blank"> +62
+                                    823-3845-3446</a></li>
+                        </ul>
+
+                        <a target="_blank" href="https://www.instagram.com/fauzann2719/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-instagram text-white" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+                            </svg>
+                        </a>
+                        <a target="_blank" href="https://www.linkedin.com/in/fauzan2720/">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                                class="bi bi-linkedin text-white mx-1" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                    <div class="col-md">
+                        <p class="text-white">&copy; 2022 | Built by Fauzan Abdillah</p>
+                    </div>
+                </div>
+            </div>
+            <!-- akhir copyright -->
+        </div>
+    </footer>
+    <!-- akhir footer -->
+
+    <!-- untuk scroll navbar -->
+    <script>
+        const navBar = document.getElementById("navbar");
+
+        function scroll() {
+            let calc = window.scrollY;
+            if (calc > 0) {
+                navBar.classList.replace("bg-transparent", "bg-white");
+                navBar.classList.replace("navbar-light", "navbar-light");
+                navBar.classList.replace("shadows", "shadow");
+            } else if (calc <= 0) {
+                navBar.classList.replace("bg-white", "bg-transparent");
+                navBar.classList.replace("navbar-light", "navbar-light");
+                navBar.classList.replace("shadow", "shadows");
+            }
+        }
+
+        window.onscroll = () => { // jika tidak work untuk arrow function, coba pakai function biasa
+            scroll();
+        };
+    </script>
+
+    <!-- untuk send message -->
+    <script>
+        $(document).on('click', '#send', function () {
+            /* Inputan Formulir */
+            var input_name = $("#fullname").val(),
+                input_email = $("#email").val(),
+                input_message = $("#message").val();
+
+            /* Pengaturan Whatsapp */
+            var walink = 'https://web.whatsapp.com/send',
+                phone = '6282338453446',
+                success = 'Message sent successfully.',
+                failed = 'Failed to send message, please check again.';
+
+            /* Smartphone Support */
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                var walink = 'whatsapp://send';
+            }
+
+            if (input_name != "" && input_email != "" && input_message != "") {
+                /* Whatsapp URL */
+                var send_whatsapp = walink + '?phone=' + phone + '&text=' + 'Haii%2C%20Fauzan.%0APerkenalkan%20saya%20' + input_name + '%20dengan%20email%20' + input_email
+                    + '.%0A' + input_message
+                    + '.%0ATerimakasih';
+
+                /* Whatsapp Window Open */
+                window.open(send_whatsapp, '_blank');
+                document.getElementById("alert").innerHTML = '<div class="alert alert-success">' + success + '</div>';
+            } else {
+                document.getElementById("alert").innerHTML = '<div class="alert alert-danger">' + failed + '</div>';
+            }
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
