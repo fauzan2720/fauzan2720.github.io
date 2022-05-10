@@ -94,40 +94,58 @@
         .pt-5 {
             padding-top: 70px !important;
         }
+
+        /* Versi Mobile */
+        @media (max-width: 992px) {
+            .navbar-martop {
+                margin-top: 0 !important;
+            }
+        }
+
+        /* Akhir Mobile */
     </style>
 </head>
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top shadows" id="navbar">
-        <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent sticky-top shadows navbar-martop" id="navbar"
+        style="margin-top: -56px;">
+        <div class="container container-fluid">
             <a class="navbar-brand fw-bold" href="#home">My Portofolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav mr-auto w-100 justify-content-end">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About Me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">My Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#courses">Courses Completed</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact Me</a>
-                    </li>
-                </ul>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav w-100 justify-content-end">
+                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#about">About Me</a>
+                    <a class="nav-link" href="#projects">My Projects</a>
+                    <a class="nav-link" href="#courses">Courses Completed</a>
+                    <a class="nav-link" href="#contact">Contact Me</a>
+                </div>
             </div>
         </div>
     </nav>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top shadows" id="navbar">
+        <div class="container container-fluid">
+            <a class="navbar-brand fw-bold" href="#home">My Portofolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav justify-content-end">
+                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#about">About Me</a>
+                    <a class="nav-link" href="#projects">My Projects</a>
+                    <a class="nav-link" href="#courses">Courses Completed</a>
+                    <a class="nav-link" href="#contact">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </nav> -->
     <!-- akhir navbar -->
 
     <section id="home">
@@ -137,13 +155,13 @@
             <div class="container">
                 <div class=" row py-3 mb-5">
                     <div class="col-lg">
-                        <p class="fw-bold mt-5 pt-5 py-2" style="font-size: 54px; line-height: 91px;">Hello, there
+                        <p class="fw-bold mt-5 pt-5 py-2" style="font-size: 50px; line-height: 91px;">Hello, there
                             👋🏻👋🏻<br>I’m <span style="color: #34B3FF;">Fauzan</span></p>
                         <p style="font-size: 24px;">My daily life building Mobile Apps with Flutter and Laravel as API
                             <br>Nice to meet you
                         </p>
                     </div>
-                    <div class="col-lg">
+                    <div class="col-lg mt-3">
                         <img src="https://user-images.githubusercontent.com/74108522/167539914-a5f6a106-426d-429b-957f-083a79279bd0.png"
                             class="px-5 mx-5 img-fluid" alt="...">
                     </div>
@@ -153,7 +171,7 @@
         <!-- akhir jumbotron -->
 
         <!-- about me -->
-        <div class="container" id="about">
+        <div class="container container-fluid" id="about">
             <h1 class="fw-bold pt-5 text-center">About <span class="text-primary">Me</span></h1>
 
             <div class="row my-5 py-1">
@@ -187,7 +205,7 @@
 
         <!-- my projects -->
         <div class="bg-light" id="projects">
-            <div class="container">
+            <div class="container container-fluid">
                 <h1 class="fw-bold pt-5 text-center">My <span class="text-primary">Projects</span></h1>
 
                 <!-- MOBILE APPS -->
@@ -259,7 +277,7 @@
         <!-- akhir my projects -->
 
         <!-- courses completed -->
-        <div class="container" id="courses">
+        <div class="container container-fluid" id="courses">
             <h1 class="fw-bold pt-5 text-center">Courses <span class="text-primary">Completed</span></h1>
 
             <div class="row row-cols-1 row-cols-md-3 g-4 pb-5 mb-5 mt-3">
@@ -286,7 +304,7 @@
 
         <!-- contact me -->
         <div class="bg-light" id="contact">
-            <div class="container">
+            <div class="container container-fluid">
                 <h1 class="fw-bold pt-5 text-center">Contact <span class="text-primary">Me</span></h1>
 
                 <div class="row py-4 justify-content-center">
@@ -325,7 +343,7 @@
         <div style="background-color: #284B63;">
             <hr class="bg-primary" style="padding: 0; margin: 0;">
             <!-- copyright -->
-            <div class="container pt-2 pb-3">
+            <div class="container container-fluid pt-2 pb-3">
                 <div class="row pt-3">
 
                     <div class="col-md">
@@ -392,7 +410,7 @@
             }
         }
 
-        window.onscroll = () => { // jika tidak work untuk arrow function, coba pakai function biasa
+        window.onscroll = () => {
             scroll();
         };
     </script>
