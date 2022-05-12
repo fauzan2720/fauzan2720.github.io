@@ -95,10 +95,33 @@
             padding-top: 70px !important;
         }
 
+        .padding-title {
+            padding-top: 150px !important;
+        }
+
         /* Versi Mobile */
         @media (max-width: 992px) {
-            .navbar-martop {
+            .bg-transparent {
+                background: linear-gradient(126.83deg, #CCECFF 0%, #E2F4FF 69.44%) !important;
+            }
+
+            .text-responsive-title {
+                font-size: 40px !important;
+                line-height: 60px !important;
                 margin-top: 0 !important;
+            }
+
+            .text-responsive {
+                font-size: 18px !important;
+            }
+
+            .img-responsive {
+                padding-left: 0 !important;
+                margin-bottom: -180px !important;
+            }
+
+            .padding-title {
+                padding-top: 0 !important;
             }
         }
 
@@ -108,8 +131,7 @@
 
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent sticky-top shadows navbar-martop" id="navbar"
-        style="margin-top: -56px;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top shadows navbar-martop" id="navbar">
         <div class="container container-fluid">
             <a class="navbar-brand fw-bold" href="#home">My Portofolio</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -127,43 +149,26 @@
             </div>
         </div>
     </nav>
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top shadows" id="navbar">
-        <div class="container container-fluid">
-            <a class="navbar-brand fw-bold" href="#home">My Portofolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav justify-content-end">
-                    <a class="nav-link" href="#home">Home</a>
-                    <a class="nav-link" href="#about">About Me</a>
-                    <a class="nav-link" href="#projects">My Projects</a>
-                    <a class="nav-link" href="#courses">Courses Completed</a>
-                    <a class="nav-link" href="#contact">Contact Me</a>
-                </div>
-            </div>
-        </div>
-    </nav> -->
     <!-- akhir navbar -->
 
     <section id="home">
         <!-- jumbotron -->
         <div class="pt-5"
-            style="background: linear-gradient(126.83deg, #CCECFF 0%, #ffffff 69.44%); padding-bottom: 80px !important;">
+            style="background: linear-gradient(126.83deg, #CCECFF 0%, #ffffff 69.44%); padding-bottom: 120px !important;">
             <div class="container">
-                <div class=" row py-3 mb-5">
+                <div class=" row py-3 mb-5 pt-3">
                     <div class="col-lg">
-                        <p class="fw-bold mt-5 pt-5 py-2" style="font-size: 50px; line-height: 91px;">Hello, there
-                            👋🏻👋🏻<br>I’m <span style="color: #34B3FF;">Fauzan</span></p>
-                        <p style="font-size: 24px;">My daily life building Mobile Apps with Flutter and Laravel as API
-                            <br>Nice to meet you
+                        <p class="fw-bold padding-title py-2 text-responsive-title"
+                            style="font-size: 64px; line-height: 80px;">
+                            Hello, there 👋🏻👋🏻<br>I’m <span style="color: #34B3FF;">Fauzan</span>
+                        </p>
+                        <p class="text-responsive" style="font-size: 24px;">My daily life building Mobile Apps with
+                            Flutter and Laravel as API <br>Nice to meet you
                         </p>
                     </div>
                     <div class="col-lg mt-3">
                         <img src="https://user-images.githubusercontent.com/74108522/167539914-a5f6a106-426d-429b-957f-083a79279bd0.png"
-                            class="px-5 mx-5 img-fluid" alt="...">
+                            width="100%" style="padding-left: 150px;" class="img-responsive">
                     </div>
                 </div>
             </div>
